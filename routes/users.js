@@ -40,7 +40,7 @@ router.post('/login', async (req, res) => {
       
       res.send('Success')
     } else {
-      res.send('Not Allowed')
+      res.send('Invalid credentials')
     }
   } catch {
     res.status(500).send()
